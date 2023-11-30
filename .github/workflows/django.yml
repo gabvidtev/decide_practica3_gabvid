@@ -14,10 +14,11 @@ jobs:
     strategy:
       matrix:
         python-version: [3.10.12, 3.11]
+        postgres-version: [14.9, 15]
 
     services:
       postgres:
-        image: postgres:14.9
+        image: postgres: ${{matrix.postgres-version}}
         env:
           POSTGRES_USER: decide
           POSTGRES_PASSWORD: decide
