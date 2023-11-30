@@ -12,3 +12,4 @@ coverage==6.5.0
 jsonnet==0.18.0
 django-nose==1.4.6
 
+#Conflicto rq2
