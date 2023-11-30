@@ -19,8 +19,7 @@ jobs:
 
     services:
       postgres:
-        image: 
-        postgres-version: ${{matrix.postgres-version}}
+        image: postgres:${{matrix.postgres-version}}
         env:
           POSTGRES_USER: decide
           POSTGRES_PASSWORD: decide
